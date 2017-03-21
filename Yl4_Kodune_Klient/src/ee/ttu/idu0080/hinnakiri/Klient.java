@@ -1,4 +1,4 @@
-package ee.ttu.idu0080.hinnakiri;
+﻿package ee.ttu.idu0080.hinnakiri;
 
 /**
  * Klient hinnakirja teenusele
@@ -59,7 +59,6 @@ public final class Klient {
 			} catch(HinnakiriNegNumberFormatException e) {
 				System.out.println("Hind on negatiivne: " + object);
 			} catch(SOAPFaultException e){
-//				System.out.println("SOAPFaultException: "+ object + ":" + e);
 				System.out.println("SOAPFaultException: "+ object);
 			} catch (javax.xml.ws.WebServiceException e){
 				System.out.println("Yhenduse viga: " + e);
@@ -69,8 +68,8 @@ public final class Klient {
 			}
 		}
 	}
-*/
-	
+
+*/	
 	public static void main(String args[]) throws Exception {
 		URL wsdlURL = parseArguments(args);
 
