@@ -45,7 +45,7 @@ public class HinnakiriServiceImpl implements HinnakiriService {
 			throw new HinnakiriNumberFormatException();
 		}
 		
-		if (parameters.length() - parameters.indexOf(".") -1 > 2)
+		if ((parameters.indexOf(".") != -1) && (parameters.length() - parameters.indexOf(".") -1 > 2))
 			throw new HinnakiriDecimalNumberFormatException();
 		
 		if (maximumPrice == 0)
